@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router";
 import { Menu, X, Database, Terminal, Cpu, FileJson, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "../../lib/utils";
@@ -21,7 +20,7 @@ export function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
+
       // Determine active section
       const sections = navItems.map(item => item.href.substring(1));
       const current = sections.find(section => {
@@ -51,8 +50,8 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
-        scrolled 
-          ? "bg-[#0B1120]/90 backdrop-blur-md border-[#6366F1]/20 shadow-[0_0_15px_rgba(99,102,241,0.1)]" 
+        scrolled
+          ? "bg-[#0B1120]/90 backdrop-blur-md border-[#6366F1]/20 shadow-[0_0_15px_rgba(99,102,241,0.1)]"
           : "bg-transparent"
       )}
     >
@@ -66,7 +65,7 @@ export function Navbar() {
               ARUN<span className="text-[#6366F1]"> SUNDAR</span>
             </span>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
@@ -86,7 +85,7 @@ export function Navbar() {
               ))}
             </div>
           </div>
-          
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}

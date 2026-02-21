@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-[#0B1120]">
       <div className="absolute inset-0 bg-gradient-to-b from-[#0B1120] via-[#111827] to-[#0B1120] opacity-80 z-0"></div>
-      
+
       {/* Abstract Data Flow Graphics */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
         <div className="absolute top-1/4 left-10 w-72 h-72 bg-[#6366F1]/20 rounded-full blur-3xl animate-pulse"></div>
@@ -16,15 +16,15 @@ export function Hero() {
       <ParticleBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-block text-center py-1 px-3 rounded-full  text-[#ffffff] font-medium text-xl mb-6 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#6366F1] to-[#22C55E]">
-            <h1 class="gokul">Hello, I'M</h1>
-          </span>
+          <h1 className="gokul">Hello, I'M</h1>
+        </span>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-[#ffffff]/10 border border-[#ffffff]/30 text-[#ffffff] font-medium text-sm mb-6 tracking-wide">
-            <h1 class="name_size">ARUNSUNDAR A</h1>
+            <h1 className="name_size">ARUNSUNDAR A</h1>
           </span>
           <span className="inline-block py-1 px-3 rounded-full bg-[#ffffff]/10 border border-[#ffffff]/30 text-[#ffffff] font-medium text-sm mb-6 tracking-wide">
             DATA ANALYST | MACHINE LEARNING ENTHUSIAST
@@ -66,7 +66,7 @@ export function Hero() {
             View Projects
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
-          
+
           <a
             href="#contact"
             className="px-8 py-3 rounded-lg border border-gray-700 hover:border-[#22C55E] hover:text-[#22C55E] text-gray-300 font-medium transition-all flex items-center gap-2 bg-[#111827]/50 backdrop-blur-sm"
